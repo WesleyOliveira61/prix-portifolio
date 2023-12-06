@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script&family=Libre+Baskerville&family=Nunito:ital,wght@0,400;1,1000&display=swap");
+
+:root {
+  --purple: #c55ffc;
+  --purple-haze: #efdcf9;
+  --charcoal: #323e42;
+  --violet: #7954a1;
+}
+
+*,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-wrap: no-wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 100vw;
+  background-color: var(--purple-haze);
+  border-radius: 40px;
+  border: solid 20px white;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  padding: 10px 20px;
+  border: solid 2px white;
+  border-radius: 20px;
+  background-image: linear-gradient(
+    to right,
+    var(--violet),
+    var(--purple-haze)
+  );
+}
+
+a {
+  text-decoration: none;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 200;
+  color: var(--violet);
+  background-color: transparent;
+}
+#home {
+  color: var(--purple-haze);
+}
+
+ul {
+  display: flex;
+  gap: 12px;
+  list-style: none;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: "Anton", sans-serif;
+  font-size: 12rem;
+  font-weight: 400;
+  color: var(--violet);
+  text-align: center;
+  filter: drop-shadow(-5px 5px 10px black);
+}
+
+#home {
+  color: var(--purple-haze);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 40px;
+  gap: 10px;
+}
+
+#info {
+  margin-left: 20px;
+  border: 2px solid white;
+  border-radius: 20px;
+}
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 20px;
+  margin-right: 20px;
+  padding: 5px;
+}
+iframe {
+  border-radius: 20px;
+  flex: 1 1 auto;
+}
+
+#legenda {
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 5px;
+  text-align: center;
+}
+footer {
+  grid-column: 1 / span 2;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* DISPOSITIVOS MOVEIS*/
+@media (max-width: 700px) {
+  main {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  #info {
+    margin: 0px 20px 0 20px;
+  }
+
+  aside {
+    margin: 0px 20px 0 20px;
+    display: flex;
+    flex: 1 1 560px;
+  }
+  footer {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+}
