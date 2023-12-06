@@ -120,6 +120,14 @@ footer {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+    justify-content: center;
+  }
+  nav {
+    display: flex;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 10px;
   }
 
   #info {
@@ -130,7 +138,9 @@ footer {
     margin: 0px 20px 0 20px;
     display: flex;
     flex: 1 1 560px;
+    margin-right: 10px;
   }
+
   footer {
     display: flex;
     flex: 1 1 auto;
